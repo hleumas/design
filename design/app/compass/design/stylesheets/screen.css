@@ -87,22 +87,31 @@ html, body {
   height: 126px;
 }
 
-/* line 16, ../src/screen.scss */
-body {
-  background-color: #443322;
+@font-face {
+  font-family: Anaktoria;
+  src: url('stylesheets/fonts/Anaktoria.otf');
 }
 
-/* line 1, ../src/_menu.scss */
-#menu {
-  position: fixed;
+/* line 26, ../src/screen.scss */
+body {
+  background-color: #443322;
+  font-family: 'Anaktoria', cursive;
+  color: #321;
+  font-size: 150%;
 }
-/* line 3, ../src/_menu.scss */
+
+/* line 35, ../src/screen.scss */
+h1 {
+  font-size: 300%;
+}
+
+/* line 2, ../src/_menu.scss */
 #menu a {
   display: block;
   position: absolute;
 }
 
-/* line 8, ../src/_menu.scss */
+/* line 7, ../src/_menu.scss */
 #kto_sme {
   text-indent: -119988px;
   overflow: hidden;
@@ -114,7 +123,7 @@ body {
   height: 125px;
   left: 30px;
 }
-/* line 11, ../src/_menu.scss */
+/* line 10, ../src/_menu.scss */
 #kto_sme:hover, #kto_sme.current {
   text-indent: -119988px;
   overflow: hidden;
@@ -126,7 +135,7 @@ body {
   height: 125px;
 }
 
-/* line 15, ../src/_menu.scss */
+/* line 14, ../src/_menu.scss */
 #ponukame {
   text-indent: -119988px;
   overflow: hidden;
@@ -138,7 +147,7 @@ body {
   height: 116px;
   left: 240px;
 }
-/* line 18, ../src/_menu.scss */
+/* line 17, ../src/_menu.scss */
 #ponukame:hover, #ponukame.current {
   text-indent: -119988px;
   overflow: hidden;
@@ -150,7 +159,7 @@ body {
   height: 116px;
 }
 
-/* line 22, ../src/_menu.scss */
+/* line 21, ../src/_menu.scss */
 #prace {
   text-indent: -119988px;
   overflow: hidden;
@@ -162,7 +171,7 @@ body {
   height: 112px;
   left: 470px;
 }
-/* line 25, ../src/_menu.scss */
+/* line 24, ../src/_menu.scss */
 #prace:hover, #prace.current {
   text-indent: -119988px;
   overflow: hidden;
@@ -174,7 +183,7 @@ body {
   height: 112px;
 }
 
-/* line 29, ../src/_menu.scss */
+/* line 28, ../src/_menu.scss */
 #kontakt {
   text-indent: -119988px;
   overflow: hidden;
@@ -186,7 +195,7 @@ body {
   height: 95px;
   left: 700px;
 }
-/* line 32, ../src/_menu.scss */
+/* line 31, ../src/_menu.scss */
 #kontakt:hover, #kontakt.current {
   text-indent: -119988px;
   overflow: hidden;
@@ -198,8 +207,10 @@ body {
   height: 95px;
 }
 
-/* line 22, ../src/screen.scss */
+/* line 41, ../src/screen.scss */
 #header {
+  position: relative;
+  left: -50px;
   width: 900px;
   height: 178px;
   background: url('images/header.jpg?1311693802') no-repeat;
@@ -207,19 +218,22 @@ body {
   margin-right: auto;
 }
 
-/* line 29, ../src/screen.scss */
+/* line 50, ../src/screen.scss */
 #content {
   background: url('images/content.jpg?1311693812') repeat-y;
   background-position: 0px 178px;
-  width: 900px;
+  width: 800px;
+  padding: 0px 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 35, ../src/screen.scss */
+/* line 57, ../src/screen.scss */
 #footer {
   background: url('images/footer.png?1311693170') no-repeat;
-  width: 900px;
+  height: 46px;
+  width: 820px;
+  padding: 40px;
   margin-left: auto;
   margin-right: auto;
 }

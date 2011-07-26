@@ -6,20 +6,41 @@
 @import "compass/reset";
 @import 'compass/layout';
 @import 'compass/utilities';
-@include sticky-footer(126px, '#content', '#layout_footer', '#footer');
 $bg: #432;
 $pageWidth: 900px;
 $headerHeight: 178px;
+$footerHeight: 126px;
+$footerPadding: 40px;
+$contentHorizontalPadding: 50px;
+$contentInnerWidth: $pageWidth - 2*$contentHorizontalPadding;
+$footerInnerHeight: $footerHeight - 2 * $footerPadding;
+$footerInnerWidth: $pageWidth - 2 * $footerPadding;
+@include sticky-footer($footerHeight, '#content', '#layout_footer', '#footer');
 
 @mixin center {margin-left: auto; margin-right: auto;}
 
+@font-face {
+    font-family: Anaktoria;
+    src: font-url('Anaktoria.otf');
+}
 body {
     background-color: $bg;
+    //font-family: Palatino Linotype, Book Antiqua3, Palatino, serif;
+    //font-family: 'Times New Roman', 'Times', serif;
+    font-family: 'Anaktoria', cursive;
+    color: #321;
+    font-size: 150%;
+}
+
+h1 {
+    font-size: 300%;
 }
 
 @import 'menu';
 
 #header {
+    position: relative;
+    left: -$contentHorizontalPadding;
     width: $pageWidth;
     height: $headerHeight;
     background: image-url('header.jpg') no-repeat;
@@ -29,11 +50,14 @@ body {
 #content {
     background: image-url('content.jpg') repeat-y;
     background-position: 0px $headerHeight;
-    width: $pageWidth;
+    width: $contentInnerWidth;
+    padding: 0px $contentHorizontalPadding;
     @include center;
 }
 #footer {
     background: image-url('footer.png') no-repeat;
-    width: $pageWidth;
+    height: $footerInnerHeight;
+    width: $footerInnerWidth;
+    padding: $footerPadding;
     @include center;
 }
