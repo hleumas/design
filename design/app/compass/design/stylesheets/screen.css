@@ -1,0 +1,225 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 10, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#content {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -126px;
+}
+/* line 18, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#content #layout_footer {
+  height: 126px;
+}
+
+/* line 20, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 126px;
+}
+
+/* line 16, ../src/screen.scss */
+body {
+  background-color: #443322;
+}
+
+/* line 1, ../src/_menu.scss */
+#menu {
+  position: fixed;
+}
+/* line 3, ../src/_menu.scss */
+#menu a {
+  display: block;
+  position: absolute;
+}
+
+/* line 8, ../src/_menu.scss */
+#kto_sme {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('images/ktosme.png?1311702517');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 187px;
+  height: 125px;
+  left: 30px;
+}
+/* line 11, ../src/_menu.scss */
+#kto_sme:hover, #kto_sme.current {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('images/ktosmeactive.png?1311704417');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 187px;
+  height: 125px;
+}
+
+/* line 15, ../src/_menu.scss */
+#ponukame {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('images/ponukame.png?1311703351');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 215px;
+  height: 116px;
+  left: 240px;
+}
+/* line 18, ../src/_menu.scss */
+#ponukame:hover, #ponukame.current {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('images/ponukameactive.png?1311705088');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 215px;
+  height: 116px;
+}
+
+/* line 22, ../src/_menu.scss */
+#prace {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('images/prace.png?1311703328');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 219px;
+  height: 112px;
+  left: 470px;
+}
+/* line 25, ../src/_menu.scss */
+#prace:hover, #prace.current {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('images/praceactive.png?1311704927');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 219px;
+  height: 112px;
+}
+
+/* line 29, ../src/_menu.scss */
+#kontakt {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('images/kontakt.png?1311703485');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 178px;
+  height: 95px;
+  left: 700px;
+}
+/* line 32, ../src/_menu.scss */
+#kontakt:hover, #kontakt.current {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('images/kontaktactive.png?1311705069');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 178px;
+  height: 95px;
+}
+
+/* line 22, ../src/screen.scss */
+#header {
+  width: 900px;
+  height: 178px;
+  background: url('images/header.jpg?1311693802') no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 29, ../src/screen.scss */
+#content {
+  background: url('images/content.jpg?1311693812') repeat-y;
+  background-position: 0px 178px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 35, ../src/screen.scss */
+#footer {
+  background: url('images/footer.png?1311693170') no-repeat;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}

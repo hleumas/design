@@ -1,0 +1,39 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import 'compass/layout';
+@import 'compass/utilities';
+@include sticky-footer(126px, '#content', '#layout_footer', '#footer');
+$bg: #432;
+$pageWidth: 900px;
+$headerHeight: 178px;
+
+@mixin center {margin-left: auto; margin-right: auto;}
+
+body {
+    background-color: $bg;
+}
+
+@import 'menu';
+
+#header {
+    width: $pageWidth;
+    height: $headerHeight;
+    background: image-url('header.jpg') no-repeat;
+    @include center;
+}
+
+#content {
+    background: image-url('content.jpg') repeat-y;
+    background-position: 0px $headerHeight;
+    width: $pageWidth;
+    @include center;
+}
+#footer {
+    background: image-url('footer.png') no-repeat;
+    width: $pageWidth;
+    @include center;
+}

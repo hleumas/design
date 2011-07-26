@@ -1,0 +1,12 @@
+kto_sme:
+    label: Kto sme
+    link: Homepage:ktosme
+ponukame:
+    label: Ponúkame
+    link: Homepage:ponukame
+prace:
+    label: Naše práce
+    link: Homepage:naseprace
+kontakt:
+    label: Kontakt
+    link: Homepage:kontakt

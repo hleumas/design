@@ -1,0 +1,35 @@
+#menu {
+    position: fixed;
+    a {
+        display: block;
+        position: absolute;
+    }
+}
+#kto_sme {
+    @include replace-text-with-dimensions('ktosme.png');
+    left: 30px;
+    &:hover, &.current {
+        @include replace-text-with-dimensions('ktosmeactive.png');
+    }
+}
+#ponukame {
+    @include replace-text-with-dimensions('ponukame.png');
+    left: 240px;
+    &:hover, &.current {
+        @include replace-text-with-dimensions('ponukameactive.png');
+    }
+}
+#prace {
+    @include replace-text-with-dimensions('prace.png');
+    left: 470px;
+    &:hover, &.current {
+        @include replace-text-with-dimensions('praceactive.png');
+    }
+}
+#kontakt {
+    @include replace-text-with-dimensions('kontakt.png');
+    left: 700px;
+    &:hover, &.current {
+        @include replace-text-with-dimensions('kontaktactive.png');
+    }
+}
