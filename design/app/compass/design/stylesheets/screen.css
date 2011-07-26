@@ -88,19 +88,24 @@ html, body {
 }
 
 @font-face {
-  font-family: Anaktoria;
+  font-family: 'Anaktoria';
   src: url('fonts/Anaktoria.otf') format("opentype");
 }
 
-/* line 26, ../src/screen.scss */
+@font-face {
+  font-family: 'AnaktoriaIE';
+  src: url('fonts/Anaktoria.eot');
+}
+
+/* line 30, ../src/screen.scss */
 body {
   background-color: #443322;
-  font-family: 'Anaktoria', cursive;
+  font-family: 'Anaktoria', 'AnaktoriaIE', cursive;
   color: #321;
   font-size: 150%;
 }
 
-/* line 35, ../src/screen.scss */
+/* line 39, ../src/screen.scss */
 h1 {
   font-size: 300%;
 }
@@ -207,7 +212,7 @@ h1 {
   height: 95px;
 }
 
-/* line 41, ../src/screen.scss */
+/* line 45, ../src/screen.scss */
 #header {
   position: relative;
   left: -50px;
@@ -218,7 +223,7 @@ h1 {
   margin-right: auto;
 }
 
-/* line 50, ../src/screen.scss */
+/* line 54, ../src/screen.scss */
 #content {
   background: url('images/content.jpg?1311693812') repeat-y;
   background-position: 0px 178px;
@@ -228,7 +233,7 @@ h1 {
   margin-right: auto;
 }
 
-/* line 57, ../src/screen.scss */
+/* line 61, ../src/screen.scss */
 #footer {
   background: url('images/footer.png?1311693170') no-repeat;
   height: 46px;

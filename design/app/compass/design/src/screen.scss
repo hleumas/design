@@ -20,14 +20,18 @@ $footerInnerWidth: $pageWidth - 2 * $footerPadding;
 @mixin center {margin-left: auto; margin-right: auto;}
 
 @font-face {
-    font-family: Anaktoria;
+    font-family: 'Anaktoria';
     src: font-url('Anaktoria.otf') format('opentype');
+}
+@font-face {
+    font-family: 'AnaktoriaIE';
+    src: font-url('Anaktoria.eot');
 }
 body {
     background-color: $bg;
     //font-family: Palatino Linotype, Book Antiqua3, Palatino, serif;
     //font-family: 'Times New Roman', 'Times', serif;
-    font-family: 'Anaktoria', cursive;
+    font-family: 'Anaktoria', 'AnaktoriaIE', cursive;
     color: #321;
     font-size: 150%;
 }
