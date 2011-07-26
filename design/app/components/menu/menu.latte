@@ -1,5 +1,5 @@
 <ul n:attr="id => $id">
     <li n:foreach="$items as $key => $item">
-    <a title="{$item['label']}" id='{$key}' href="{plink $item['link']}" {ifCurrent $item['link']}class='current'>{/ifCurrent}{$item['label']}</a>
+    <a title="{$item['label']}" id='{$key}' href="{plink $item['link']}"{ifCurrent $item['link']}class='current'{/ifCurrent}>{$item['label']}</a>
     </li>
 </ul>
