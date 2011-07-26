@@ -89,7 +89,7 @@ html, body {
 
 @font-face {
   font-family: Anaktoria;
-  src: url('stylesheets/fonts/Anaktoria.otf');
+  src: url('stylesheets/fonts/Anaktoria.otf') format("opentype");
 }
 
 /* line 26, ../src/screen.scss */

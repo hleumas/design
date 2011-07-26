@@ -21,7 +21,7 @@ $footerInnerWidth: $pageWidth - 2 * $footerPadding;
 
 @font-face {
     font-family: Anaktoria;
-    src: font-url('Anaktoria.otf');
+    src: font-url('Anaktoria.otf') format('opentype');
 }
 body {
     background-color: $bg;
