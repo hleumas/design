@@ -1,7 +1,10 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/** Variables */
+/** Colours */
 /** Fonts */
 @font-face {
   font-family: 'Anaktoria';
@@ -14,8 +17,6 @@
 }
 
 /** Horizontal centering */
-/** Variables */
-/** Colours */
 /* line 14, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -101,7 +102,7 @@ html, body {
   height: 126px;
 }
 
-/* line 13, ../src/screen.scss */
+/* line 14, ../src/screen.scss */
 a {
   text-decoration: none;
   color: #442288;
@@ -112,6 +113,10 @@ a:hover {
 }
 /* line 18, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:visited {
+  color: #442288;
+}
+/* line 21, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+a:focus {
   color: #332211;
 }
 /* line 24, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
@@ -120,20 +125,31 @@ a:hover {
 }
 /* line 27, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:active {
-  color: #442288;
+  color: #332211;
 }
 
-/* line 18, ../src/screen.scss */
-body {
-  background-color: #443322;
-  font-family: 'Anaktoria', 'AnaktoriaIE', cursive;
-  color: #321;
-  font-size: 150%;
+/* line 19, ../src/screen.scss */
+p {
+  margin: 2ex 0px;
 }
 
 /* line 23, ../src/screen.scss */
+body {
+  background-color: #443322;
+  font-family: 'Anaktoria', 'AnaktoriaIE', cursive;
+  color: #332211;
+  font-size: 150%;
+}
+
+/* line 28, ../src/screen.scss */
 h1 {
   font-size: 300%;
+  margin-bottom: 1ex;
+}
+
+/* line 33, ../src/screen.scss */
+h2 {
+  font-size: 170%;
   margin-bottom: 1ex;
 }
 
@@ -247,7 +263,7 @@ h1 {
   height: 95px;
 }
 
-/* line 30, ../src/screen.scss */
+/* line 40, ../src/screen.scss */
 #header {
   position: relative;
   left: -70px;
@@ -258,17 +274,22 @@ h1 {
   margin-right: auto;
 }
 
-/* line 39, ../src/screen.scss */
+/* line 49, ../src/screen.scss */
 #content {
   background: url('images/content.jpg?1311693812') repeat-y;
   background-position: 0px 178px;
   width: 760px;
-  padding: 0px 70px;
+  padding: 0px 70px 2ex 70px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 46, ../src/screen.scss */
+/* line 56, ../src/screen.scss */
+#layout-footer {
+  clear: both;
+}
+
+/* line 59, ../src/screen.scss */
 #footer {
   background: url('images/footer.png?1311693170') no-repeat;
   height: 46px;
@@ -278,12 +299,12 @@ h1 {
   margin-right: auto;
 }
 
-/* line 54, ../src/screen.scss */
+/* line 67, ../src/screen.scss */
 dl {
   line-height: 120%;
 }
 
-/* line 57, ../src/screen.scss */
+/* line 70, ../src/screen.scss */
 dt {
   font-weight: bold;
   display: inline;
@@ -291,4 +312,43 @@ dt {
   min-width: 5em;
   width: auto !important;
   width: 5em;
+}
+
+/* line 76, ../src/screen.scss */
+.thumbnail {
+  display: inline;
+  float: left;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  width: 200px;
+  margin-right: 2em;
+  margin-bottom: 2ex;
+  border: 2px #732 solid;
+  padding: 10px;
+  background: #b86;
+  display: block;
+}
+/* line 86, ../src/screen.scss */
+.thumbnail img {
+  display: block;
+  margin-bottom: 0.5ex;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 91, ../src/screen.scss */
+.thumbnail .caption {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 80%;
+  color: #332211;
+}
+
+/* line 98, ../src/screen.scss */
+.praca {
+  clear: both;
 }

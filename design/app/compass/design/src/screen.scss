@@ -7,12 +7,17 @@
 @import "compass/reset";
 @import 'compass/layout';
 @import 'compass/utilities';
+@import 'compass/css3';
 
 @include sticky-footer($footerHeight, '#content', '#layout-footer', '#footer');
 
 a {
     @include hover-link;
-    @include link-colors($linkColor, $linkActive, $linkColor, $linkActive);
+    @include link-colors($linkColor, $linkActive, $linkActive, $linkColor, $linkActive);
+}
+
+p {
+    margin: 2ex 0px;
 }
 
 body {
@@ -22,6 +27,11 @@ body {
 
 h1 {
     font-size: 300%;
+    margin-bottom: 1ex;
+}
+
+h2 {
+    font-size: 170%;
     margin-bottom: 1ex;
 }
 
@@ -40,8 +50,11 @@ h1 {
     background: image-url('content.jpg') repeat-y;
     background-position: 0px $headerHeight;
     width: $contentInnerWidth;
-    padding: 0px $contentHorizontalPadding;
+    padding: 0px $contentHorizontalPadding $contentBottomPadding $contentHorizontalPadding;
     @include center;
+}
+#layout-footer {
+    clear: both;
 }
 #footer {
     background: image-url('footer.png') no-repeat;
@@ -58,4 +71,30 @@ dt {
     font-weight: bold;
     @include float-left;
     @include min-width(5em);
+}
+
+.thumbnail {
+    @include float-left;
+    @include border-radius;
+    width: 200px;
+    margin-right: 2em;
+    margin-bottom: 2ex;
+    border: 2px #732 solid;
+    padding: 10px;
+    background: #b86;
+    display: block;
+    img {
+        display: block;
+        margin-bottom: 0.5ex;
+        @include center;
+    }
+    .caption {
+        @include center;
+        text-align: center;
+        font-size: 80%;
+        color: $textColor;
+    }
+}
+.praca {
+    clear: both;
 }
