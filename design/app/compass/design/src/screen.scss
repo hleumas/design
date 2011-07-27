@@ -3,41 +3,26 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import 'base';
 @import "compass/reset";
 @import 'compass/layout';
 @import 'compass/utilities';
-$bg: #432;
-$pageWidth: 900px;
-$headerHeight: 178px;
-$footerHeight: 126px;
-$footerPadding: 40px;
-$contentHorizontalPadding: 50px;
-$contentInnerWidth: $pageWidth - 2*$contentHorizontalPadding;
-$footerInnerHeight: $footerHeight - 2 * $footerPadding;
-$footerInnerWidth: $pageWidth - 2 * $footerPadding;
+
 @include sticky-footer($footerHeight, '#content', '#layout-footer', '#footer');
 
-@mixin center {margin-left: auto; margin-right: auto;}
+a {
+    @include hover-link;
+    @include link-colors($linkColor, $linkActive, $linkColor, $linkActive);
+}
 
-@font-face {
-    font-family: 'Anaktoria';
-    src: font-url('Anaktoria.otf') format('opentype');
-}
-@font-face {
-    font-family: 'AnaktoriaIE';
-    src: font-url('Anaktoria.eot');
-}
 body {
     background-color: $bg;
-    //font-family: Palatino Linotype, Book Antiqua3, Palatino, serif;
-    //font-family: 'Times New Roman', 'Times', serif;
-    font-family: 'Anaktoria', 'AnaktoriaIE', cursive;
-    color: #321;
-    font-size: 150%;
+    @include default_fonts;
 }
 
 h1 {
     font-size: 300%;
+    margin-bottom: 1ex;
 }
 
 @import 'menu';
@@ -64,4 +49,13 @@ h1 {
     width: $footerInnerWidth;
     padding: $footerPadding;
     @include center;
+}
+
+dl {
+    line-height: 120%;
+}
+dt {
+    font-weight: bold;
+    @include float-left;
+    @include min-width(5em);
 }
