@@ -3,6 +3,10 @@
         display: block;
         position: absolute;
     }
+    /**IE Issue */
+    li {
+        display: inline;
+    }
 }
 #kto_sme {
     @include replace-text-with-dimensions('ktosme.png');

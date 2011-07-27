@@ -110,13 +110,21 @@ h1 {
   font-size: 300%;
 }
 
+/* line 1, ../src/_menu.scss */
+#menu {
+  /**IE Issue */
+}
 /* line 2, ../src/_menu.scss */
 #menu a {
   display: block;
   position: absolute;
 }
-
 /* line 7, ../src/_menu.scss */
+#menu li {
+  display: inline;
+}
+
+/* line 11, ../src/_menu.scss */
 #kto_sme {
   text-indent: -119988px;
   overflow: hidden;
@@ -128,7 +136,7 @@ h1 {
   height: 125px;
   left: 30px;
 }
-/* line 10, ../src/_menu.scss */
+/* line 14, ../src/_menu.scss */
 #kto_sme:hover, #kto_sme.current {
   text-indent: -119988px;
   overflow: hidden;
@@ -140,7 +148,7 @@ h1 {
   height: 125px;
 }
 
-/* line 14, ../src/_menu.scss */
+/* line 18, ../src/_menu.scss */
 #ponukame {
   text-indent: -119988px;
   overflow: hidden;
@@ -152,7 +160,7 @@ h1 {
   height: 116px;
   left: 240px;
 }
-/* line 17, ../src/_menu.scss */
+/* line 21, ../src/_menu.scss */
 #ponukame:hover, #ponukame.current {
   text-indent: -119988px;
   overflow: hidden;
@@ -164,7 +172,7 @@ h1 {
   height: 116px;
 }
 
-/* line 21, ../src/_menu.scss */
+/* line 25, ../src/_menu.scss */
 #prace {
   text-indent: -119988px;
   overflow: hidden;
@@ -176,7 +184,7 @@ h1 {
   height: 112px;
   left: 470px;
 }
-/* line 24, ../src/_menu.scss */
+/* line 28, ../src/_menu.scss */
 #prace:hover, #prace.current {
   text-indent: -119988px;
   overflow: hidden;
@@ -188,7 +196,7 @@ h1 {
   height: 112px;
 }
 
-/* line 28, ../src/_menu.scss */
+/* line 32, ../src/_menu.scss */
 #kontakt {
   text-indent: -119988px;
   overflow: hidden;
@@ -200,7 +208,7 @@ h1 {
   height: 95px;
   left: 700px;
 }
-/* line 31, ../src/_menu.scss */
+/* line 35, ../src/_menu.scss */
 #kontakt:hover, #kontakt.current {
   text-indent: -119988px;
   overflow: hidden;
