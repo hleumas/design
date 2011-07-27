@@ -15,7 +15,7 @@ $contentHorizontalPadding: 50px;
 $contentInnerWidth: $pageWidth - 2*$contentHorizontalPadding;
 $footerInnerHeight: $footerHeight - 2 * $footerPadding;
 $footerInnerWidth: $pageWidth - 2 * $footerPadding;
-@include sticky-footer($footerHeight, '#content', '#layout_footer', '#footer');
+@include sticky-footer($footerHeight, '#content', '#layout-footer', '#footer');
 
 @mixin center {margin-left: auto; margin-right: auto;}
 
