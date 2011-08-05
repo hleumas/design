@@ -346,9 +346,10 @@ dt {
   text-align: center;
   font-size: 80%;
   color: #332211;
+  display: block;
 }
 
-/* line 98, ../src/screen.scss */
+/* line 99, ../src/screen.scss */
 .praca {
   clear: both;
 }

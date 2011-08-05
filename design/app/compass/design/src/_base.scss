@@ -1,0 +1,34 @@
+/** Variables */
+/** Colours */
+$bg: #432;
+$textColor: #321;
+$linkColor: #428;
+$linkActive: $textColor;
+$pageWidth: 900px;
+$headerHeight: 178px;
+$footerHeight: 126px;
+$footerPadding: 40px;
+$contentHorizontalPadding: 70px;
+$contentBottomPadding: 2ex;
+$contentInnerWidth: $pageWidth - 2*$contentHorizontalPadding;
+$footerInnerHeight: $footerHeight - 2 * $footerPadding;
+$footerInnerWidth: $pageWidth - 2 * $footerPadding;
+
+/** Fonts */
+@font-face {
+    font-family: 'Anaktoria';
+    src: font-url('Anaktoria.otf') format('opentype');
+}
+@font-face {
+    font-family: 'AnaktoriaIE';
+    src: font-url('Anaktoria.eot');
+}
+
+@mixin default_fonts {
+    font-family: 'Anaktoria', 'AnaktoriaIE', cursive;
+    color: $textColor;
+    font-size: 150%;
+}
+
+/** Horizontal centering */
+@mixin center {margin-left: auto; margin-right: auto;}
