@@ -129,11 +129,21 @@ a:active {
 }
 
 /* line 19, ../src/screen.scss */
-p {
+ul, dl, p {
   margin: 2ex 0px;
 }
 
 /* line 23, ../src/screen.scss */
+ul {
+  list-style-type: disc;
+}
+
+/* line 27, ../src/screen.scss */
+li {
+  margin: 0.5ex 1.5em;
+}
+
+/* line 31, ../src/screen.scss */
 body {
   background-color: #443322;
   font-family: 'Anaktoria', 'AnaktoriaIE', cursive;
@@ -141,16 +151,24 @@ body {
   font-size: 150%;
 }
 
-/* line 28, ../src/screen.scss */
+/* line 36, ../src/screen.scss */
 h1 {
   font-size: 300%;
-  margin-bottom: 1ex;
 }
 
-/* line 33, ../src/screen.scss */
+/* line 40, ../src/screen.scss */
 h2 {
   font-size: 170%;
-  margin-bottom: 1ex;
+  margin-bottom: -0.5ex;
+  margin-top: 0.5ex;
+}
+
+/* line 46, ../src/screen.scss */
+h3 {
+  font-size: 140%;
+  font-weight: bold;
+  margin-bottom: -0.5ex;
+  margin-top: 0.5ex;
 }
 
 /* line 1, ../src/_menu.scss */
@@ -263,7 +281,7 @@ h2 {
   height: 95px;
 }
 
-/* line 40, ../src/screen.scss */
+/* line 55, ../src/screen.scss */
 #header {
   position: relative;
   left: -70px;
@@ -274,7 +292,7 @@ h2 {
   margin-right: auto;
 }
 
-/* line 49, ../src/screen.scss */
+/* line 64, ../src/screen.scss */
 #content {
   background: url('images/content.jpg?1311693812') repeat-y;
   background-position: 0px 178px;
@@ -284,12 +302,12 @@ h2 {
   margin-right: auto;
 }
 
-/* line 56, ../src/screen.scss */
+/* line 71, ../src/screen.scss */
 #layout-footer {
   clear: both;
 }
 
-/* line 59, ../src/screen.scss */
+/* line 74, ../src/screen.scss */
 #footer {
   background: url('images/footer.png?1311693170') no-repeat;
   height: 46px;
@@ -299,12 +317,12 @@ h2 {
   margin-right: auto;
 }
 
-/* line 67, ../src/screen.scss */
+/* line 82, ../src/screen.scss */
 dl {
   line-height: 120%;
 }
 
-/* line 70, ../src/screen.scss */
+/* line 85, ../src/screen.scss */
 dt {
   font-weight: bold;
   display: inline;
@@ -314,7 +332,7 @@ dt {
   width: 5em;
 }
 
-/* line 76, ../src/screen.scss */
+/* line 91, ../src/screen.scss */
 .thumbnail {
   display: inline;
   float: left;
@@ -332,14 +350,14 @@ dt {
   background: #b86;
   display: block;
 }
-/* line 86, ../src/screen.scss */
+/* line 101, ../src/screen.scss */
 .thumbnail img {
   display: block;
   margin-bottom: 0.5ex;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 91, ../src/screen.scss */
+/* line 106, ../src/screen.scss */
 .thumbnail .caption {
   margin-left: auto;
   margin-right: auto;
@@ -349,7 +367,7 @@ dt {
   display: block;
 }
 
-/* line 99, ../src/screen.scss */
+/* line 114, ../src/screen.scss */
 .praca {
   clear: both;
 }

@@ -16,8 +16,16 @@ a {
     @include link-colors($linkColor, $linkActive, $linkActive, $linkColor, $linkActive);
 }
 
-p {
+ul, dl, p {
     margin: 2ex 0px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    margin: 0.5ex 1.5em;
 }
 
 body {
@@ -27,12 +35,19 @@ body {
 
 h1 {
     font-size: 300%;
-    margin-bottom: 1ex;
 }
 
 h2 {
     font-size: 170%;
-    margin-bottom: 1ex;
+    margin-bottom: -0.5ex;
+    margin-top: 0.5ex;
+}
+
+h3 {
+    font-size: 140%;
+    font-weight: bold;
+    margin-bottom: -0.5ex;
+    margin-top: 0.5ex;
 }
 
 @import 'menu';
