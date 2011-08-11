@@ -1,9 +1,10 @@
 /** Variables */
 /** Colours */
-$bg: #432;
+$bg: #eeeacc;
 $textColor: #321;
 $linkColor: #428;
 $linkActive: $textColor;
+$menuActive: #556;
 $pageWidth: 900px;
 $headerHeight: 178px;
 $footerHeight: 126px;
@@ -24,8 +25,13 @@ $footerInnerWidth: $pageWidth - 2 * $footerPadding;
     src: font-url('Anaktoria.eot');
 }
 
+@font-face {
+    font-family: 'BenguiatFrisky';
+    src: font-url('BenguiatFrisky.otf') format('opentype');
+}
+
 @mixin default_fonts {
-    font-family: 'Anaktoria', 'AnaktoriaIE', cursive;
+    font-family: 'BenguiatFrisky', 'Anaktoria', 'AnaktoriaIE', cursive;
     color: $textColor;
     font-size: 150%;
 }

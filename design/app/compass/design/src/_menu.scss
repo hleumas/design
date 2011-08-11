@@ -1,38 +1,53 @@
 #menu {
+    margin: 0px;
+    list-style-type: none;
     a {
         display: block;
         position: absolute;
+        font-size: 40px;
+        @include link-colors($textColor, $menuActive, $menuActive, $textColor, $menuActive);
+        &:hover {
+            text-decoration: none;
+        }
+        &.current {
+            color: $menuActive;
+        }
     }
     /**IE Issue */
     li {
         display: inline;
+        margin: 0px;
     }
 }
 #kto_sme {
-    @include replace-text-with-dimensions('ktosme.png');
-    left: 30px;
+    //@include replace-text-with-dimensions('ktosme.png');
+    left: 50px;
+    top: 35px;
     &:hover, &.current {
-        @include replace-text-with-dimensions('ktosmeactive.png');
+      //  @include replace-text-with-dimensions('ktosmeactive.png');
     }
 }
 #ponukame {
-    @include replace-text-with-dimensions('ponukame.png');
-    left: 240px;
+    //@include replace-text-with-dimensions('ponukame.png');
+    left: 230px;
+    top: 28px;
     &:hover, &.current {
-        @include replace-text-with-dimensions('ponukameactive.png');
+     //   @include replace-text-with-dimensions('ponukameactive.png');
     }
 }
 #prace {
-    @include replace-text-with-dimensions('prace.png');
-    left: 470px;
+    //@include replace-text-with-dimensions('prace.png');
+    left: 450px;
+    top: 21px;
     &:hover, &.current {
-        @include replace-text-with-dimensions('praceactive.png');
+       // @include replace-text-with-dimensions('praceactive.png');
     }
 }
 #kontakt {
-    @include replace-text-with-dimensions('kontakt.png');
-    left: 700px;
+    //@include replace-text-with-dimensions('kontakt.png');
+    left: 690px;
+    top: 14px;
     &:hover, &.current {
-        @include replace-text-with-dimensions('kontaktactive.png');
+        //@include replace-text-with-dimensions('kontaktactive.png');
     }
 }

@@ -16,6 +16,11 @@
   src: url('fonts/Anaktoria.eot');
 }
 
+@font-face {
+  font-family: 'BenguiatFrisky';
+  src: url('fonts/BenguiatFrisky.otf') format("opentype");
+}
+
 /** Horizontal centering */
 /* line 14, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
@@ -145,156 +150,118 @@ li {
 
 /* line 31, ../src/screen.scss */
 body {
-  background-color: #443322;
-  font-family: 'Anaktoria', 'AnaktoriaIE', cursive;
+  background-color: #eeeacc;
+  font-family: cursive;
+  font-size: 150%;
+}
+
+/* line 37, ../src/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'BenguiatFrisky', 'Anaktoria', 'AnaktoriaIE', cursive;
   color: #332211;
   font-size: 150%;
 }
 
-/* line 36, ../src/screen.scss */
+/* line 41, ../src/screen.scss */
 h1 {
   font-size: 300%;
 }
 
-/* line 40, ../src/screen.scss */
+/* line 45, ../src/screen.scss */
 h2 {
   font-size: 170%;
   margin-bottom: -0.5ex;
   margin-top: 0.5ex;
 }
 
-/* line 46, ../src/screen.scss */
+/* line 51, ../src/screen.scss */
 h3 {
   font-size: 140%;
-  font-weight: bold;
   margin-bottom: -0.5ex;
   margin-top: 0.5ex;
 }
 
 /* line 1, ../src/_menu.scss */
 #menu {
+  margin: 0px;
+  list-style-type: none;
   /**IE Issue */
 }
-/* line 2, ../src/_menu.scss */
+/* line 4, ../src/_menu.scss */
 #menu a {
   display: block;
   position: absolute;
+  font-size: 40px;
+  color: #332211;
 }
-/* line 7, ../src/_menu.scss */
+/* line 18, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#menu a:visited {
+  color: #332211;
+}
+/* line 21, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#menu a:focus {
+  color: #555566;
+}
+/* line 24, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#menu a:hover {
+  color: #555566;
+}
+/* line 27, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#menu a:active {
+  color: #555566;
+}
+/* line 9, ../src/_menu.scss */
+#menu a:hover {
+  text-decoration: none;
+}
+/* line 12, ../src/_menu.scss */
+#menu a.current {
+  color: #555566;
+}
+/* line 17, ../src/_menu.scss */
 #menu li {
   display: inline;
+  margin: 0px;
 }
 
-/* line 11, ../src/_menu.scss */
+/* line 22, ../src/_menu.scss */
 #kto_sme {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('images/ktosme.png?1311702517');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 187px;
-  height: 125px;
-  left: 30px;
-}
-/* line 14, ../src/_menu.scss */
-#kto_sme:hover, #kto_sme.current {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('images/ktosmeactive.png?1311704417');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 187px;
-  height: 125px;
+  left: 50px;
+  top: 35px;
 }
 
-/* line 18, ../src/_menu.scss */
+/* line 30, ../src/_menu.scss */
 #ponukame {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('images/ponukame.png?1311703351');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 215px;
-  height: 116px;
-  left: 240px;
-}
-/* line 21, ../src/_menu.scss */
-#ponukame:hover, #ponukame.current {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('images/ponukameactive.png?1311705088');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 215px;
-  height: 116px;
+  left: 230px;
+  top: 28px;
 }
 
-/* line 25, ../src/_menu.scss */
+/* line 38, ../src/_menu.scss */
 #prace {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('images/prace.png?1311703328');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 219px;
-  height: 112px;
-  left: 470px;
-}
-/* line 28, ../src/_menu.scss */
-#prace:hover, #prace.current {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('images/praceactive.png?1311704927');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 219px;
-  height: 112px;
+  left: 450px;
+  top: 21px;
 }
 
-/* line 32, ../src/_menu.scss */
+/* line 46, ../src/_menu.scss */
 #kontakt {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('images/kontakt.png?1311703485');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 178px;
-  height: 95px;
-  left: 700px;
-}
-/* line 35, ../src/_menu.scss */
-#kontakt:hover, #kontakt.current {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('images/kontaktactive.png?1311705069');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 178px;
-  height: 95px;
+  left: 690px;
+  top: 14px;
 }
 
-/* line 55, ../src/screen.scss */
+/* line 59, ../src/screen.scss */
 #header {
   position: relative;
   left: -70px;
   width: 900px;
   height: 178px;
-  background: url('images/header.jpg?1311693802') no-repeat;
+  background: url('images/header.jpg?1312654787') no-repeat;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 64, ../src/screen.scss */
+/* line 68, ../src/screen.scss */
 #content {
-  background: url('images/content.jpg?1311693812') repeat-y;
+  background: url('images/content.jpg?1312654750') repeat-y;
   background-position: 0px 178px;
   width: 760px;
   padding: 0px 70px 2ex 70px;
@@ -302,14 +269,14 @@ h3 {
   margin-right: auto;
 }
 
-/* line 71, ../src/screen.scss */
+/* line 75, ../src/screen.scss */
 #layout-footer {
   clear: both;
 }
 
-/* line 74, ../src/screen.scss */
+/* line 78, ../src/screen.scss */
 #footer {
-  background: url('images/footer.png?1311693170') no-repeat;
+  background: url('images/footer.png?1312654797') no-repeat;
   height: 46px;
   width: 820px;
   padding: 40px;
@@ -317,12 +284,12 @@ h3 {
   margin-right: auto;
 }
 
-/* line 82, ../src/screen.scss */
+/* line 86, ../src/screen.scss */
 dl {
   line-height: 120%;
 }
 
-/* line 85, ../src/screen.scss */
+/* line 89, ../src/screen.scss */
 dt {
   font-weight: bold;
   display: inline;
@@ -332,7 +299,7 @@ dt {
   width: 5em;
 }
 
-/* line 91, ../src/screen.scss */
+/* line 95, ../src/screen.scss */
 .thumbnail {
   display: inline;
   float: left;
@@ -350,14 +317,14 @@ dt {
   background: #b86;
   display: block;
 }
-/* line 101, ../src/screen.scss */
+/* line 105, ../src/screen.scss */
 .thumbnail img {
   display: block;
   margin-bottom: 0.5ex;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 106, ../src/screen.scss */
+/* line 110, ../src/screen.scss */
 .thumbnail .caption {
   margin-left: auto;
   margin-right: auto;
@@ -367,7 +334,7 @@ dt {
   display: block;
 }
 
-/* line 114, ../src/screen.scss */
+/* line 118, ../src/screen.scss */
 .praca {
   clear: both;
 }
