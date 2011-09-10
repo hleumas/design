@@ -1,10 +1,11 @@
 #menu {
+    @include heading_fonts;
     margin: 0px;
     list-style-type: none;
     a {
         display: block;
         position: absolute;
-        font-size: 40px;
+        font-size: 55px;
         @include link-colors($textColor, $menuActive, $menuActive, $textColor, $menuActive);
         &:hover {
             text-decoration: none;
@@ -22,31 +23,31 @@
 #kto_sme {
     //@include replace-text-with-dimensions('ktosme.png');
     left: 50px;
-    top: 35px;
+    top: 30px;
     &:hover, &.current {
       //  @include replace-text-with-dimensions('ktosmeactive.png');
     }
 }
 #ponukame {
     //@include replace-text-with-dimensions('ponukame.png');
-    left: 230px;
-    top: 28px;
+    left: 240px;
+    top: 23px;
     &:hover, &.current {
      //   @include replace-text-with-dimensions('ponukameactive.png');
     }
 }
 #prace {
     //@include replace-text-with-dimensions('prace.png');
-    left: 450px;
-    top: 21px;
+    left: 465px;
+    top: 16px;
     &:hover, &.current {
        // @include replace-text-with-dimensions('praceactive.png');
     }
 }
 #kontakt {
     //@include replace-text-with-dimensions('kontakt.png');
-    left: 690px;
-    top: 14px;
+    left: 700px;
+    top: 11px;
     &:hover, &.current {
         //@include replace-text-with-dimensions('kontaktactive.png');
     }

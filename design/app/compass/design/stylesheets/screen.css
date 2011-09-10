@@ -7,18 +7,13 @@
 /** Colours */
 /** Fonts */
 @font-face {
-  font-family: 'Anaktoria';
-  src: url('fonts/Anaktoria.otf') format("opentype");
-}
-
-@font-face {
-  font-family: 'AnaktoriaIE';
-  src: url('fonts/Anaktoria.eot');
-}
-
-@font-face {
   font-family: 'BenguiatFrisky';
-  src: url('fonts/BenguiatFrisky.otf') format("opentype");
+  src: url('fonts/befrisky.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'BenguiatFriskyIE';
+  src: url('fonts/befrisky.eot');
 }
 
 /** Horizontal centering */
@@ -151,47 +146,51 @@ li {
 /* line 31, ../src/screen.scss */
 body {
   background-color: #eeeacc;
-  font-family: cursive;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: black;
   font-size: 150%;
 }
 
-/* line 37, ../src/screen.scss */
+/* line 36, ../src/screen.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'BenguiatFrisky', 'Anaktoria', 'AnaktoriaIE', cursive;
+  font-family: 'BenguiatFrisky', 'BenguiatFriskyIE', cursive;
   color: #332211;
   font-size: 150%;
 }
 
-/* line 41, ../src/screen.scss */
+/* line 40, ../src/screen.scss */
 h1 {
   font-size: 300%;
 }
 
-/* line 45, ../src/screen.scss */
+/* line 44, ../src/screen.scss */
 h2 {
   font-size: 170%;
-  margin-bottom: -0.5ex;
+  margin-bottom: -1ex;
   margin-top: 0.5ex;
 }
 
-/* line 51, ../src/screen.scss */
+/* line 50, ../src/screen.scss */
 h3 {
   font-size: 140%;
-  margin-bottom: -0.5ex;
+  margin-bottom: -1ex;
   margin-top: 0.5ex;
 }
 
 /* line 1, ../src/_menu.scss */
 #menu {
+  font-family: 'BenguiatFrisky', 'BenguiatFriskyIE', cursive;
+  color: #332211;
+  font-size: 150%;
   margin: 0px;
   list-style-type: none;
   /**IE Issue */
 }
-/* line 4, ../src/_menu.scss */
+/* line 5, ../src/_menu.scss */
 #menu a {
   display: block;
   position: absolute;
-  font-size: 40px;
+  font-size: 55px;
   color: #332211;
 }
 /* line 18, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
@@ -210,45 +209,45 @@ h3 {
 #menu a:active {
   color: #555566;
 }
-/* line 9, ../src/_menu.scss */
+/* line 10, ../src/_menu.scss */
 #menu a:hover {
   text-decoration: none;
 }
-/* line 12, ../src/_menu.scss */
+/* line 13, ../src/_menu.scss */
 #menu a.current {
   color: #555566;
 }
-/* line 17, ../src/_menu.scss */
+/* line 18, ../src/_menu.scss */
 #menu li {
   display: inline;
   margin: 0px;
 }
 
-/* line 22, ../src/_menu.scss */
+/* line 23, ../src/_menu.scss */
 #kto_sme {
   left: 50px;
-  top: 35px;
+  top: 30px;
 }
 
-/* line 30, ../src/_menu.scss */
+/* line 31, ../src/_menu.scss */
 #ponukame {
-  left: 230px;
-  top: 28px;
+  left: 240px;
+  top: 23px;
 }
 
-/* line 38, ../src/_menu.scss */
+/* line 39, ../src/_menu.scss */
 #prace {
-  left: 450px;
-  top: 21px;
+  left: 465px;
+  top: 16px;
 }
 
-/* line 46, ../src/_menu.scss */
+/* line 47, ../src/_menu.scss */
 #kontakt {
-  left: 690px;
-  top: 14px;
+  left: 700px;
+  top: 11px;
 }
 
-/* line 59, ../src/screen.scss */
+/* line 58, ../src/screen.scss */
 #header {
   position: relative;
   left: -70px;
@@ -259,7 +258,7 @@ h3 {
   margin-right: auto;
 }
 
-/* line 68, ../src/screen.scss */
+/* line 67, ../src/screen.scss */
 #content {
   background: url('images/content.jpg?1312654750') repeat-y;
   background-position: 0px 178px;
@@ -269,12 +268,12 @@ h3 {
   margin-right: auto;
 }
 
-/* line 75, ../src/screen.scss */
+/* line 74, ../src/screen.scss */
 #layout-footer {
   clear: both;
 }
 
-/* line 78, ../src/screen.scss */
+/* line 77, ../src/screen.scss */
 #footer {
   background: url('images/footer.png?1312654797') no-repeat;
   height: 46px;
@@ -284,12 +283,12 @@ h3 {
   margin-right: auto;
 }
 
-/* line 86, ../src/screen.scss */
+/* line 85, ../src/screen.scss */
 dl {
   line-height: 120%;
 }
 
-/* line 89, ../src/screen.scss */
+/* line 88, ../src/screen.scss */
 dt {
   font-weight: bold;
   display: inline;
@@ -299,7 +298,7 @@ dt {
   width: 5em;
 }
 
-/* line 95, ../src/screen.scss */
+/* line 94, ../src/screen.scss */
 .thumbnail {
   display: inline;
   float: left;
@@ -317,14 +316,14 @@ dt {
   background: #b86;
   display: block;
 }
-/* line 105, ../src/screen.scss */
+/* line 104, ../src/screen.scss */
 .thumbnail img {
   display: block;
   margin-bottom: 0.5ex;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 110, ../src/screen.scss */
+/* line 109, ../src/screen.scss */
 .thumbnail .caption {
   margin-left: auto;
   margin-right: auto;
@@ -334,7 +333,7 @@ dt {
   display: block;
 }
 
-/* line 118, ../src/screen.scss */
+/* line 117, ../src/screen.scss */
 .praca {
   clear: both;
 }

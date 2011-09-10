@@ -30,12 +30,11 @@ li {
 
 body {
     background-color: $bg;
-    font-family: cursive;
-    font-size: 150%;
+    @include default_fonts;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    @include default_fonts;
+    @include heading_fonts;
 }
 
 h1 {
@@ -44,13 +43,13 @@ h1 {
 
 h2 {
     font-size: 170%;
-    margin-bottom: -0.5ex;
+    margin-bottom: -1ex;
     margin-top: 0.5ex;
 }
 
 h3 {
     font-size: 140%;
-    margin-bottom: -0.5ex;
+    margin-bottom: -1ex;
     margin-top: 0.5ex;
 }
 

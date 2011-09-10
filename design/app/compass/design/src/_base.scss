@@ -17,22 +17,24 @@ $footerInnerWidth: $pageWidth - 2 * $footerPadding;
 
 /** Fonts */
 @font-face {
-    font-family: 'Anaktoria';
-    src: font-url('Anaktoria.otf') format('opentype');
-}
-@font-face {
-    font-family: 'AnaktoriaIE';
-    src: font-url('Anaktoria.eot');
+    font-family: 'BenguiatFrisky';
+    src: font-url('befrisky.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'BenguiatFrisky';
-    src: font-url('BenguiatFrisky.otf') format('opentype');
+    font-family: 'BenguiatFriskyIE';
+    src: font-url('befrisky.eot');
+}
+
+@mixin heading_fonts {
+    font-family: 'BenguiatFrisky', 'BenguiatFriskyIE', cursive; 
+    color: $textColor;
+    font-size: 150%;
 }
 
 @mixin default_fonts {
-    font-family: 'BenguiatFrisky', 'Anaktoria', 'AnaktoriaIE', cursive;
-    color: $textColor;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: black;
     font-size: 150%;
 }
 
