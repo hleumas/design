@@ -14,7 +14,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-	<meta name="description" content="Nette Framework web application skeleton">
+    <meta name="description" content="Kompletný servis webov &ndash; od
+    registrácie domény, grafický návrh až po tvorbu obsahu a dlhodobý servis.
+    Služby vždy prispôsobíme plne na mieru klientovi.">
 	<meta name="robots" content="{$robots}" n:ifset="$robots">
 
 	<title>{include #title} &ndash; pH</title>
@@ -27,6 +29,18 @@
 	<link rel="shortcut icon" href="{$basePath}/favicon.ico" type="image/x-icon">
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25133732-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+    
 	<script type="text/javascript" src="{$basePath}/js/netteForms.js"></script>
 	<script type="text/javascript" src="{$basePath}/js/email.js"></script>
 	{block head}{/block}
